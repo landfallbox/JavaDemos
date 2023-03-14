@@ -38,13 +38,14 @@ public class PageHelper {
     public Integer getLimit(Integer currentPage) {
         if (recordCount <= 0) {
             return null;
-        }else {
+        }
+        else {
             return pageSize;
         }
     }
 
     public Integer getTotalPages() {
-        return new Integer(totalPages);
+        return totalPages;
     }
 
     public void setPageSize(int pageSize) {
